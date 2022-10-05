@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    src: url('./fonts/ubuntu-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/ubuntu-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/ubuntu-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/ubuntu-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/ubuntu-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/ubuntu-v20-latin-regular.svg#Ubuntu') format('svg'); /* Legacy iOS */
+  }
+  
+body {
+    margin: 0;
+    background-image: url('background.png');
+    background-size: 100% 100%;
+    min-height: 100vh;
+}
+
+#nav {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu';
+    padding: 6rem 12rem;
+}
+
+container {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+navitem {
+    color: white;
+    display: flex;
+    font-size: 2rem;
+}
+
+site-title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+container a {
+    color: inherit;
+    text-decoration: none;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+container a:hover {
+    background-color: #1e415e;
+    text-decoration: none;
+    color: inherit;
+}
+
+container button {
+    color: inherit;
+    background-color: transparent;
+    border-radius: 16px;
+    border-style: solid;
+    padding: 14px 28px;
+    margin: 1rem;
+}
+
+container button:hover {
+    background-color: #1e415e;
+}
